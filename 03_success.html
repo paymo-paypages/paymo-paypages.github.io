@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <title>Paymo</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+    <link rel="stylesheet" href="styles/build.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-nav">
+          <a href="#"><img class="header-nav_merchant-logo" src="images/provider/Technopower.png" alt="Техносила" /></a>
+          <div class="button-wrapper"><a href="#" class="button button__back">назад в магазин</a></div>
+        </div>
+      
+        <div class="payment-info">
+          <div class="payment-info-item hidden-xs">
+            <div class="payment-info-item_title">Оплата заказа №665428 в магазине</div>
+            <div class="payment-info-item_value">ТЕХНОСИЛА</div>
+          </div>
+          <div class="payment-info-item visible-xs-inline-block">
+            <div class="payment-info-item_title">Оплата заказа №665428</div>
+          </div>
+          <div class="payment-info-item">
+            <div class="payment-info-item_title">Сумма:</div>
+            <div class="payment-info-item_value payment-info-item_value__summa">15 000,39 Р</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="payment-process">
+        <div class="payment-process-step">Выбор способа оплаты</div>
+        <div class="payment-process-step">Оплата счета</div>
+        <div class="payment-process-step current">Подтверждение</div>
+      </div>
+
+      <div class="payment-status payment-status__success">
+        <div class="payment-status-info hidden-xs">Мы отправили письмо с деталями платежа на email, который вы указали. <a href="#">Перейти в Gmail</a></div>
+
+        <div class="payment-status-title">Платеж <em>2346669960</em> прошел успешно!</div>
+
+        <div class="payment-status-info visible-xs">Мы отправили письмо с деталями платежа на email, который вы указали. <a href="#">Перейти в Gmail</a></div>
+
+        <div class="payment-status-details">
+          <div class="payment-details">
+            <div class="payment-details-item">
+              <div class="payment-details-item_title">Номер телефона:</div>
+              <div class="payment-details-item_value">+7 (234) 555-46-56</div>
+            </div>
+            <div class="payment-details-item">
+              <div class="payment-details-item_title">Сумма платежа:</div>
+              <div class="payment-details-item_value">15 300 Р</div>
+            </div>
+            <div class="payment-details-item">
+              <div class="payment-details-item_title">Email плательщика:</div>
+              <div class="payment-details-item_value">ivanpetrov@gmail.com</div>
+            </div>
+            <div class="payment-details-item">
+              <div class="payment-details-item_title">Дата и время платежа:</div>
+              <div class="payment-details-item_value">23.10.2016 23:56</div>
+            </div>
+          </div>
+
+          <a href="#" class="button button__print">Распечатать квитанцию</a>
+        </div>
+
+        <form action="">
+          <div class="button-panel">
+            <div class="button-wrapper">
+              <input class="button" type="submit" value="Вернуться в магазин"/>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer">
+        <div class="sertificate-list">
+          <img class="sertificate-item" src="images/sertificate/mastercard.png" srcset="images/sertificate/mastercard@2x.png 2x" srcset="" />
+          <img class="sertificate-item" src="images/sertificate/thawte.png" srcset="images/sertificate/thawte@2x.png 2x" />
+          <img class="sertificate-item" src="images/sertificate/pci.png" srcset="images/sertificate/pci@2x.png 2x" />
+          <img class="sertificate-item" src="images/sertificate/visa.png" srcset="images/sertificate/visa@2x.png 2x" />
+        </div>
+        <div class="copyright">© 2016 PAYMO</div>
+        <ul class="footer-nav">
+          <li class="footer-nav-item"><a href="#">О СЕРВИСЕ</a></li>
+          <li class="footer-nav-item"><a href="#" data-popup="contacts-popup">ОБРАТНАЯ СВЯЗЬ</a></li>
+        </ul>
+      </div>
+      
+      <div class="popup popup__contacts" id="contacts-popup">
+        <div class="popup_content">
+          <div class="popup_close-button popup_close"></div>
+          <div class="popup_title">Обратная связь и контакты</div>
+      
+          <div class="contacts-info">
+            <p>Задайте нам любой интересующий вас вопрос по телефону контактного центра:</p>
+            <div class="contacts-info_phone">
+              <div class="contacts-info_phone-item">8(495) 369-60-67</div>
+              <small>звонок бесплатный для жителей Москвы и МО</small>
+              <div class="contacts-info_phone-item">8(800) 301-06-44</div>
+              <small>звонок бесплатный для всех регионов РФ</small>
+            </div>
+            <p>или напишите нам письмо:</p>
+            <div class="contacts-info_email">
+              <a href="mailto:info@paymo.ru">info@paymo.ru</a>
+            </div>
+          </div>
+      
+          <div class="feedback-form">
+            <form action="data/feedback.json" method="GET" id="feedbackForm">
+              <div class="field">
+                <label for="contacts-fullname">ФИО:</label>
+                <div class="field-input">
+                  <input type="text" name="fullname" id="contacts-fullname" placeholder="Иван Иванович Петров" data-val="true" data-val-required/>
+                </div>
+              </div>
+              <div class="field">
+                <label for="contacts-email">Ваш Email:</label>
+                <div class="field-input">
+                  <input type="text" name="email" id="contacts-email" placeholder="ivanpetrov@gmail.com" data-val="true" data-val-required="Поле необходимо заполнить" data-val-email="E-mail неверный"/>
+                </div>
+              </div>
+              <div class="field">
+                <label for="contacts-message">Текст сообщения:</label>
+                <div class="field-input">
+                  <textarea name="message" id="contacts-message" data-val="true" data-val-required=""></textarea>
+                </div>
+              </div>
+              <input class="button" type="submit" value="Отправить" />
+            </form>
+      
+            <div class="feedback-status feedback-status__success" style="display: none">
+              <div class="feedback-status_title">Сообщение успешно отправлено</div>
+            </div>
+            <div class="feedback-status feedback-status__error" style="display: none">
+              <div class="feedback-status_title">Что-то пошло не так!</div>
+              <input class="button" type="submit" value="Попробовать еще раз" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/build.js"></script>
+  </body>
+</html>
