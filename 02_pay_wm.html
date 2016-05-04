@@ -98,11 +98,11 @@
             <div class="payment-method-details">
               <p>Вы можете оплатить счет с помощью сервиса WebMoney двумя способами:</p>
               <div class="field field__radio">
-                <input type="radio" name="pay-variant" id="pay-online" checked><label for="pay-online">Онлайн-оплата</label>
+                <input type="radio" name="pay-variant" id="pay-online" value="pay-online" checked><label for="pay-online">Онлайн-оплата</label>
                 <div class="field-description">Вы будете перенаправлены на страницу сервиса WebMoney для оплаты счета</div>
               </div>
               <div class="field field__radio">
-                <input type="radio" name="pay-variant" id="pay-invoice"><label for="pay-invoice">Выставление счета</label>
+                <input type="radio" name="pay-variant" id="pay-invoice" value="pay-invoice"><label for="pay-invoice">Выставление счета</label>
                 <div class="field-description">Вам будет выставлен счет в системе WebMoney. Вам нужно будет авторизоваться в системе и оплатить счет</div>
               </div>
               <div class="field field__inline">
@@ -122,7 +122,7 @@
           </div>
         </div>
 
-        <div class="payment-timelimit" data-timelimit="180">
+        <div class="payment-timelimit" data-timelimit="180" data-failurl="03_fail.html">
           <div class="payment-timelimit_countdown">03:00</div>
           <div class="payment-timelimit_description">На оплату этого счета дается ограниченное время.</div>
         </div>
